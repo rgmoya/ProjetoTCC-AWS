@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: -webkit-linear-gradient(left, #a1c8be, #69a1bb);
+    background: -moz-linear-gradient(left, #a1c8be, #69a1bb);
+    background: -ms-linear-gradient(left, #a1c8be, #69a1bb);
+    background: -o-linear-gradient(left, #a1c8be, #69a1bb);
+    background: linear-gradient(to right, #a1c8be, #69a1bb);
+}
+
+h1 {
+    color: #3c5374;
+}
+
+ h2 {
+  font-size: 2em;
+  text-align: center;
+ }
+
+#uploadButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: 1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#uploadButton:hover {
+    background-color: #86a84b;
+}

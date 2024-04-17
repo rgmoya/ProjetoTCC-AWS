@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TCC - re/Start BRPOR1 - Grupo 2</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<center>
+<img src="campinho.jpg" alt="Campinho Digital" />
+<h1>Selecione a imagem para análise da IA</h1>
+
+<form id="uploadForm" action="https://s3.us-east-1.amazonaws.com/tcc-rgm" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="acl" value="public-read">
+    <input type="hidden" name="key" value="imagens/${filename}">
+    <input type="hidden" name="AWSAccessKeyId" value="AKIAQZVZOJ5MPW7VVTJA">
+    <input type="hidden" name="policy" value="eyJleHBpcmF0aW9uIjogIjIwMjMtMTItMzBUMTI6MDA6MDAuMDAwWiIsICJjb25kaXRpb25zIjogW1sic3RhcnRzLXdpdGgiLCAiJGtleSIsICJpbWFnZW5zLyJdLCB7ImJ1Y2tldCI6ICJ0Y2MtcmdtIn0sIHsiYWNsIjogInB1YmxpYy1yZWFkIn1dfQ==">
+    <input type="hidden" name="signature" value="ZTgbs2LnJtdykqj5nptdIkYP9Ew=">
+
+    <input id="imageUpload" type="file" name="file" accept="image/*">
+    <input type="submit" id="uploadButton" value="Upload">
+</form>
+</center>
+<script src="./js/upload.js"></script>
+</body>
+</html>
+
